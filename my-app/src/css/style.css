@@ -92,5 +92,11 @@ img.mb-4 {
   font-size: 20px;
   color: #fff;
 }
+.login-container {
+  background: rgba(255, 255, 255, 0) !important; /* Fully transparent */
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23); /* Add shadow */
+  transform: rotateX(5deg) rotateY(5deg); /* Add 3D rotation */
+}
+
 
 
