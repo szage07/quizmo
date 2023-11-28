@@ -1,0 +1,17 @@
+git commands:
+simple git
+
+get init project_name
+cd project_name
+git add
+git commit -m "Importing all the code"
+
+collaborative git 
+
+git checkout master
+git commit -a -m "logo"
+git push
+
+merge both work
+git pull
+git merge danafeature 
