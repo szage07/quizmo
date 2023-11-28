@@ -1,0 +1,11 @@
+{
+  "appId": "com.example.app",
+  "appName": "quizmo",
+  "bundledWebRuntime": false,
+  "webDir": "dist",
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 0
+    }
+  }
+}
