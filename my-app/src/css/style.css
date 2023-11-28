@@ -76,5 +76,21 @@ img{
 img.mb-4 {
   max-width: 100%;
 }
+.text-center.mb-4.text-white {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
+}
+.custom-font {
+  font-size: 20px;
+  color: #ebdfdf;
+}
+
+.custom-button {
+  background-color: #FF5733;
+  border: none;
+  padding: 10px 20px;
+  font-size: 20px;
+  color: #fff;
+}
 
 

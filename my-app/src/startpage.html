@@ -5,7 +5,7 @@
     <title>Awesome Capacitor App</title>
     <meta
       name="viewport"
-      content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+      content="viewport-fit=cover, width=device-width, initial-scale=1.0"
     />
     <meta name="format-detection" content="telephone=no" />
     <meta name="msapplication-tap-highlight" content="no" />
@@ -19,21 +19,19 @@
       src="https://unpkg.com/@ionic/pwa-elements@latest/dist/ionicpwaelements/ionicpwaelements.js"
     ></script>
 
+    <link rel="apple-touch-icon" href="./assets/icon/apple-touch-icon.png"/>
     <link rel="icon" type="image/x-icon" href="./assets/icon/favicon.ico" />
     <link rel="manifest" href="./manifest.json" />
     <link rel="stylesheet" href="./css/style.css" />
 
     <script type="module" src="./js/main.js"></script>
-
-    <meta name="theme-color" content="#31d53d" />
   </head>
-  <body>
- <div class="container-fluid vh-100 d-flex justify-content-center align-items-center">
-  <div class="text-center">
-    <p style="font-size: 20px; color: #ebdfdf;">Dive into Knowledge, Rise to the Challenge!</p><br>
-    <a href="quizpage.html" class="btn btn-primary rounded-pill" style="background-color: #FF5733; border: none; padding: 10px 20px; font-size: 20px; color: #fff;">Start Quiz ></a>
-  </div>
-</div>
-
+  <body class="container">
+    <div class="container-fluid vh-100 d-flex justify-content-center align-items-center">
+      <div class="text-center">
+        <p class="custom-font">Dive into Knowledge, Rise to the Challenge!</p><br>
+        <a href="quizpage.html" class="btn btn-primary rounded-pill custom-button">Start Quiz ></a>
+      </div>
+    </div>
   </body>
 </html>
