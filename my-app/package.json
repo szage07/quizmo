@@ -25,7 +25,8 @@
   "devDependencies": {
     "@capacitor/cli": "latest",
     "sass": "^1.69.4",
-    "vite": "^2.9.13"
+    "vite": "^2.9.13",
+    "vite-tsconfig-paths": "^4.2.1"
   },
   "author": "",
   "license": "ISC"
