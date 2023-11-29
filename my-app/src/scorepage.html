@@ -18,51 +18,68 @@
       nomodule
       src="https://unpkg.com/@ionic/pwa-elements@latest/dist/ionicpwaelements/ionicpwaelements.js"
     ></script>
-
     <link rel="apple-touch-icon" href="./assets/icon/apple-touch-icon.png"/>
     <link rel="icon" type="image/x-icon" href="./assets/icon/favicon.ico" />
     <link rel="manifest" href="./manifest.json" />
     <link rel="stylesheet" href="./css/style.css" />
 
     <script type="module" src="./js/main.js"></script>
-  </head>
-  <body class="container">
-  <br><br><br>
-    <div class="container mt-5">
-        <h1 class="text-center mb-4 text-white">LEADERBOARD</h1>
-        <table class="table table-striped">
-            <thead><br>
-                <tr>
-                    <th scope="col">Rank</th>
-                    <th scope="col">Name</th>
-                    <th scope="col">Score</th>
-                </tr>
-            </thead>
-            <tbody>
-              
-                <tr class="aqua">
-                    <th scope="row" class="aquamarine">1</th>
-                    <td class="aquamarine">Alice</td>
-                    <td class="aquamarine">95</td>
-                </tr>
-                <tr>
-                    <th scope="row" class="azure">2</th>
-                    <td class="azure">Bob</td>
-                    <td class="azure">90</td>
-                </tr>
-                <tr>
-                    <th scope="row" class="rgb-186-233-186">3</th>
-                    <td class="rgb-186-233-186">Charlie</td>
-                    <td class="rgb-186-233-186">85</td>
-                </tr>
-                
-            </tbody>
-        </table><br>
-        <div class="text-center mt-4">
-            <a href="startpage.html" class="btn btn-success">Go Home</a>
-        </div>
-    </div>
-    
 
+    <meta name="theme-color" content="#31d53d" />
+  </head>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .container-fluid {
+      background-color: rgba(255, 255, 255, 0); /* Fully transparent */
+      text-align: center;
+      padding: 20px;
+    }
+
+    .start-button {
+      background-color: #31d53d;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 25px; /* Make it round */
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .start-button:hover {
+      background-color: #2cbb37; /* Add a different color on hover */
+    }
+  </style>
+  <body class="container" >
+
+    <div class="container-fluid vh-100 d-flex justify-content-center align-items-center">
+      <div class="text-center text-white">
+          <h1>Your Score:</h1>
+          <h2 class="display-1 " style="color:wheat;"><b>2/5</b></h2><br>
+          <p class="font-size: 20px text-dark text-white">Congratulations! You've completed the quiz.</p>
+          <br>
+          <div class="mt-3">
+              <a href="startpage.html" class="btn btn-success me-2" style="background-color: darkblue">Retry Quiz</a>
+              <a href="startpage.html" class="btn btn-success me-2" style="background-color: darkblue;">Home</a>
+              <br><br>
+              
+          </div>
+      </div>
+  </div>
+  
+  <div class="confetti" style="left: 10%; animation-delay: 0.5s;"></div>
+  <div class="confetti" style="left: 20%; animation-delay: 0.8s;"></div>
+  <div class="confetti" style="left: 30%; animation-delay: 1s;"></div>
+  <div class="confetti" style="left: 40%; animation-delay: 1.3s;"></div>
+  <div class="confetti" style="left: 50%; animation-delay: 1.6s;"></div>
+  <div class="confetti" style="left: 60%; animation-delay: 1.9s;"></div>
+  <div class="confetti" style="left: 70%; animation-delay: 2.2s;"></div>
+  <div class="confetti" style="left: 80%; animation-delay: 2.5s;"></div>
+  <div class="confetti" style="left: 90%; animation-delay: 2.8s;"></div>
+  
+    
   </body>
 </html>
