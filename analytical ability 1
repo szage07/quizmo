@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Awesome Capacitor App</title>
+    <meta
+      name="viewport"
+      content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+
+    <script
+      type="module"
+      src="https://unpkg.com/@ionic/pwa-elements@latest/dist/ionicpwaelements/ionicpwaelements.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/@ionic/pwa-elements@latest/dist/ionicpwaelements/ionicpwaelements.js"
+    ></script>
+
+    <link rel="icon" type="image/x-icon" href="./assets/icon/favicon.ico" />
+    <link rel="manifest" href="./manifest.json" />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <script type="module" src="./js/main.js"></script>
+
+    <meta name="theme-color" content="#31d53d" />
+    <style>
+      /* Add your custom styles here */
+      body {
+        margin: 0;
+        font-family: 'Lucida Sans', sans-serif;
+      }
+
+      .container {
+        margin-top: 2rem; /* Adjusted margin-top */
+        position: relative;
+      }
+
+      .vocabulary-container {
+        text-align: center;
+        margin-bottom: 1rem; /* Adjusted margin-bottom */
+      }
+
+      .vocabulary-word-container {
+        background-color: #f0f0f023;
+        padding: 10px;
+        border-radius: 5px;
+        position: relative;
+        margin-bottom: 8rem; /* Adjusted margin-bottom */
+        color: rgba(232, 230, 238, 0);
+      }
+
+      .vocabulary-word-container::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        right: -10px;
+        transform: translateY(-50%);
+        border-width: 10px;
+        border-style: solid;
+        border-color: transparent transparent transparent #e9dddd1e;
+      }
+
+      .card-container {
+        background-color: rgba(255, 255, 255, 0);
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+        padding: 20px;
+        position: relative;
+        margin-bottom: 100px;
+      }
+
+      .question {
+        color: blanchedalmond;
+      }
+
+      .question-title {
+        display: flex;
+        align-items: center;
+      }
+
+      .ans {
+        margin-left: 2rem;
+      }
+
+      .btn-primary {
+        background-color: #FF5733;
+        border: none;
+        color: #fff;
+        padding: 10px 15px;
+        font-size: 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+
+      .btn-primary:hover {
+        background-color: #e64d00;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="vocabulary-container">
+        <div class="vocabulary-word-container">
+          <h1 class="text-white">Quizmo</h1>
+        </div>
+      </div>
+      <div class="col-md-10 col-lg-10">
+        <div class="card-container">
+          <div class="question p-3 border-bottom">
+            <div class="d-flex flex-row justify-content-between align-items-center mcq">
+              <h3>Analytical Ability</h3>
+              <span style="font-size: 25px;">(1 of 5)</span>
+            </div>
+          </div>
+          <div class="question p-3 border-bottom">
+            <div class="d-flex flex-row question-title">
+              <h5 class="mt-1 ml-2" style="font-size: 25px;">1. Hammer:anvil :: pestle:</h5>
+            </div>
+            <div class="ans">
+              <label class="radio">
+                <input type="radio" name="population" value="brazil">
+                <span style="font-size: 25px;">ground</span>
+              </label>
+            </div>
+            <div class="ans">
+              <label class="radio">
+                <input type="radio" name="population" value="Germany">
+                <span style="font-size: 25px;">grinder</span>
+              </label>
+            </div>
+            <div class="ans">
+              <label class="radio">
+                <input type="radio" name="population" value="Indonesia">
+                <span style="font-size: 25px;">mortar</span>
+              </label>
+            </div>
+            <div class="ans">
+              <label class="radio">
+                <input type="radio" name="population" value="Russia">
+                <span style="font-size: 25px;">knife</span>
+              </label>
+            </div>
+          </div>
+          <div class="d-flex flex-row justify-content-between align-items-center p-3">
+            <a href="analyticalability2.html">
+              <button class="btn btn-primary rounded-pill" style="font-size: 20px;">
+                Next <i class="fa fa-angle-right ml-2"></i>
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
