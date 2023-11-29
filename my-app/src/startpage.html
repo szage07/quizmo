@@ -1,37 +1,125 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Awesome Capacitor App</title>
-    <meta
-      name="viewport"
-      content="viewport-fit=cover, width=device-width, initial-scale=1.0"
-    />
-    <meta name="format-detection" content="telephone=no" />
-    <meta name="msapplication-tap-highlight" content="no" />
 
-    <script
-      type="module"
-      src="https://unpkg.com/@ionic/pwa-elements@latest/dist/ionicpwaelements/ionicpwaelements.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/@ionic/pwa-elements@latest/dist/ionicpwaelements/ionicpwaelements.js"
-    ></script>
+<head>
+  <meta charset="UTF-8" />
+  <title>Awesome Capacitor App</title>
+  <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="msapplication-tap-highlight" content="no" />
 
-    <link rel="apple-touch-icon" href="./assets/icon/apple-touch-icon.png"/>
-    <link rel="icon" type="image/x-icon" href="./assets/icon/favicon.ico" />
-    <link rel="manifest" href="./manifest.json" />
-    <link rel="stylesheet" href="./css/style.css" />
+  <script type="module" src="https://unpkg.com/@ionic/pwa-elements@latest/dist/ionicpwaelements/ionicpwaelements.esm.js"></script>
+  <script nomodule src="https://unpkg.com/@ionic/pwa-elements@latest/dist/ionicpwaelements/ionicpwaelements.js"></script>
 
-    <script type="module" src="./js/main.js"></script>
-  </head>
-  <body class="container">
-    <div class="container-fluid vh-100 d-flex justify-content-center align-items-center">
-      <div class="text-center">
-        <p class="custom-font">Dive into Knowledge, Rise to the Challenge!</p><br>
-        <a href="quizpage.html" class="btn btn-primary rounded-pill custom-button">Start Quiz ></a>
-      </div>
+  <link rel="icon" type="image/x-icon" href="./assets/icon/favicon.ico" />
+  <link rel="manifest" href="./manifest.json" />
+  <link rel="stylesheet" href="./css/style.css" />
+
+  <script type="module" src="./js/main.js"></script>
+
+  <meta name="theme-color" content="#31d53d" />
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      height: 100vh;
+      font-size: 20px;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .categories {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      color: white;
+      font-size: 20px;
+    }
+
+    .category-card {
+      width: 300px;
+      margin: 10px;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      background-color:darkblue;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .category-title {
+      font-weight: bold;
+      margin-top: 10px;
+    }
+    .edition-text {
+      font-family: 'Roboto Slab', serif;
+      font-size: 24px;
+      margin-top: 8px;
+      color: white;
+    }
+
+    .c-text {
+      color: #007BFF;
+    }
+
+    .s-text {
+      color: red;
+    }
+
+    .choose-category {
+      font-size: 18px;
+      color: #555;
+      margin: 10px 0;
+    }
+    .ch-text{
+      color: white;
+      font-size: 30px;
+    }
+    .CAT-text{
+      color: aqua;
+      font-size: 30px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="header">
+    <img src="assets/imgs/quizmo-edited.png" alt="Quiz Logo" class="mb-4">
+    <p class="choose-category"></p>
+    <span class="ch-text"><b>CHOOSE</b></span> 
+    <span class="CAT-text"><b>CATEGORY</b></span>
+    <p class="edition-text">
+      <span class="c-text">C</span><span class="s-text">S</span><span class="c-text">C</span>
+      <span class="edition">Edition</span>
+    </p>
+  </div>
+  <div class="categories">
+    <div class="category-card" onclick="selectCategory('analyticalability')">
+      <span class="category-title">NUMERICAL ABILITY</span>
     </div>
-  </body>
+    <div class="category-card" onclick="selectCategory('numericalability')">
+      <span class="category-title">ANALYTICAL ABILITY</span>
+    </div>
+    <div class="category-card" onclick="selectCategory('Science')">
+      <span class="category-title">VERBAL ABILITY</span>
+    </div>
+    <div class="category-card" onclick="selectCategory('Mathematics')">
+      <span class="category-title">GENERAL INFORMATION</span>
+    </div>
+  </div>
+
+  
+</body>
+
 </html>
