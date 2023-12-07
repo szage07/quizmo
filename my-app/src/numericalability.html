@@ -32,15 +32,42 @@
         margin: 0;
         font-family: 'Lucida Sans', sans-serif;
       }
-
+      
       .container {
         margin-top: 2rem; /* Adjusted margin-top */
         position: relative;
       }
 
-      .vocabulary-container {
+       .vocabulary-container {
         text-align: center;
-        margin-bottom: 1rem; /* Adjusted margin-bottom */
+        margin-top: 1rem;
+      }
+
+      .cse-reviewer {
+        font-size: 22px;
+        font-weight: bold;
+        color: #333; /* Default color for other text */
+        margin-bottom: 1rem;
+        text-align: center;
+        font-family: 'Roboto Slab', serif;
+      }
+
+      .cse-reviewer span {
+        color: #007BFF; /* Color for C and E */
+      }
+
+      .cse-reviewer .red-letter {
+        color:red; /* Color for S */
+       
+      }
+
+      .cse-reviewer .blue-word {
+        color: white; /* Color for REVIEWER */
+      
+      }
+      .vocabulary-container img {
+        width: 100%; /* Make the image fill the container */
+        max-width: 200px; /* Set a maximum width for the image */
       }
 
       .vocabulary-word-container {
@@ -50,6 +77,17 @@
         position: relative;
         margin-bottom: 8rem; /* Adjusted margin-bottom */
         color: rgba(232, 230, 238, 0);
+      }
+
+      .vocabulary-word-container::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        right: -10px;
+        transform: translateY(-50%);
+        border-width: 10px;
+        border-style: solid;
+        border-color: transparent transparent transparent #e9dddd1e;
       }
 
       .card-container {
@@ -78,8 +116,8 @@
         background-color: #FF5733;
         border: none;
         color: #fff;
-        padding: 10px 15px;
-        font-size: 20px;
+        padding: 5px 10px;
+        font-size: 18px;
         border-radius: 5px;
         cursor: pointer;
         transition: background-color 0.3s ease;
@@ -91,58 +129,90 @@
     </style>
   </head>
   <body>
-    <img src="assets/imgs/quizmo-edited.png" alt="Quiz Logo" class="mb-4">
     <div class="container">
       <div class="vocabulary-container">
+        <img src="assets/imgs/quizmo.png" alt="Quiz Logo" class="mb-4">
+        <div class="cse-reviewer">
+          <span>C</span><span class="red-letter">S</span><span>E</span>
+          <span class="blue-word">REVIEWER</span>
+        </div>
       </div>
       <div class="col-md-10 col-lg-10">
         <div class="card-container">
           <div class="question p-3 border-bottom">
             <div class="d-flex flex-row justify-content-between align-items-center mcq">
-              <h3>Numerical Ability</h3>
-              <span style="font-size: 25px;">(1 of 5)</span>
+              <h3 style="font-size: 18px;">Numerical Ability</h3>
+              <span style="font-size: 18px;">(2 of 20)</span>
             </div>
           </div>
           <div class="question p-3 border-bottom">
             <div class="d-flex flex-row question-title">
-              <h5 class="mt-1 ml-2" style="font-size: 25px;">1. Find the product : 800 x 125.</h5>
+              <h5 class="mt-1 ml-2" style="font-size: 18px;">1. Find the product: 800 x 125.</h5>
             </div>
             <div class="ans">
               <label class="radio">
                 <input type="radio" name="population" value="brazil">
-                <span style="font-size: 25px;">925</span>
+                <span style="font-size: 18px;">925</span>
               </label>
             </div>
             <div class="ans">
               <label class="radio">
                 <input type="radio" name="population" value="Germany">
-                <span style="font-size: 25px;">1000</span>
+                <span style="font-size: 18px;">1000</span>
               </label>
             </div>
             <div class="ans">
               <label class="radio">
                 <input type="radio" name="population" value="Indonesia">
-                <span style="font-size: 25px;">10000</span>
+                <span style="font-size: 18px;">10000</span>
               </label>
             </div>
             <div class="ans">
               <label class="radio">
                 <input type="radio" name="population" value="Russia">
-                <span style="font-size: 25px;">100000</span>
+                <span style="font-size: 18px;">100000</span>
               </label>
             </div>
           </div>
+          
+          <!-- New Question -->
+          <div class="question p-3 border-bottom">
+            <div class="d-flex flex-row question-title">
+              <h5 class="mt-1 ml-2" style="font-size: 18px;"> 2. Find the quotient : 8000/ 125.</h5>
+            </div>
+            <div class="ans">
+              <label class="radio">
+                <input type="radio" name="population" value="brazil">
+                <span style="font-size: 18px;">48</span>
+              </label>
+            </div>
+            <div class="ans">
+              <label class="radio">
+                <input type="radio" name="population" value="Germany">
+                <span style="font-size: 18px;">64</span>
+              </label>
+            </div>
+            <div class="ans">
+              <label class="radio">
+                <input type="radio" name="population" value="Indonesia">
+                <span style="font-size: 18px;">80</span>
+              </label>
+            </div>
+            <div class="ans">
+              <label class="radio">
+                <input type="radio" name="population" value="Russia">
+                <span style="font-size: 18px;">88</span>
+              </label>
+            </div>
+          </div> 
+          <!-- Continue with other questions as needed -->
+         
           <div class="d-flex flex-row justify-content-between align-items-center p-3">
-            <a href="startpage.html">
-              <button class="btn btn-primary rounded-pill" style="font-size: 20px;">
-                Back <i class="fa fa-angle-right ml-2"></i>
+            <a href="numericalability2.html">
+              <button class="btn btn-primary rounded-pill" style="font-size: 18px;">
+                Next <i class="fa fa-angle-right ml-2"></i>
               </button>
             </a>
-            <a href="numericalability2.html">
-                <button class="btn btn-primary rounded-pill" style="font-size: 20px;">
-                  Next <i class="fa fa-angle-right ml-2"></i>
-                </button>
-              </a>
           </div>
         </div>
       </div>
