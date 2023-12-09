@@ -23,6 +23,81 @@
 
   <style>
     /* Your CSS styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f3f3f3;
+      color:white;
+    }
+
+    .header {
+      text-align: center;
+      padding-top: 20px;
+    }
+
+    .header img {
+      max-width: 200px;
+      margin-bottom: 20px;
+    }
+
+    .container {
+      background-color: rgba(255, 255, 255, 0);
+      box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+      padding: 20px;
+      border-radius: 8px;
+      color: white;
+    }
+
+    .categories {
+      text-align: center;
+      font-size: 18px;
+      color:white;
+    }
+
+    .categories ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    .categories li {
+      margin-bottom: 10px;
+    }
+
+    .proceed-button {
+      text-align: center;
+      padding: 20px;
+    }
+
+    .proceed-button a {
+      background-color: #31d53d;
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    .proceed-button a:hover {
+      background-color: #238c32;
+    }
+    
+
+    .edition-text {
+      font-family: 'Roboto Slab', serif;
+      font-size: 24px;
+      margin-top: 8px;
+      color: white;
+    }
+
+    .c-text {
+      color: #007BFF;
+    }
+
+    .s-text {
+      color: red;
+    }
+
+    
   </style>
 </head>
 
@@ -30,23 +105,25 @@
 
   <div class="header">
     <img src="assets/imgs/quizmo-edited.png" alt="Quiz Logo" class="mb-4">
-  
-   
-    <iframe src="https://giphy.com/embed/3oeSAz6FqXCKuNFX6o" width="480" height="208" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/starwars-star-wars-return-of-the-jedi-3oeSAz6FqXCKuNFX6o">from giphy</a></p>
-  </div>
-
-  <!-- Motivational text with transparent background -->
-  <div style="text-align: center; padding: 20px; font-size: 20px; color: rgb(255, 255, 255); background-color: rgba(0, 0, 0, 0.5);">
-    <p>As you prepare to take your exam, remember:</p>
-    <p>You have prepared to the best of your ability. Trust in your knowledge and skills.</p>
-    <p>Stay calm, read the questions carefully, and don't rush.</p>
-    <p>Remember, it's okay to take a moment to breathe if you feel overwhelmed.</p>
-    <p><strong>Good luck! You've got this! 🍀</strong></p>
+    <p class="edition-text">
+      <span class="c-text">C</span><span class="s-text">S</span><span class="c-text">C</span>
+      <span class="edition">Edition</span>
+    </p>
+    <div class="container">
+     
+      <p>Welcome! You're about to take a Civil Service-type exam with four categories:</p>
+      <ul class="categories">
+        <li>Verbal Ability</li>
+        <li>Numerical Ability</li>
+        <li>Analytical Ability</li>
+        <li>General Information</li>
+      </ul>
+    </div>
   </div>
 
   <!-- Proceed button -->
-  <div style="text-align: center; padding: 20px;">
-    <a href="numericalability.html" style="background-color: #31d53d; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px;">Proceed</a>
+  <div class="proceed-button">
+    <a href="numericalability.html">Proceed</a>
   </div>
   
 </body>
