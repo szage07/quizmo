@@ -32,15 +32,42 @@
         margin: 0;
         font-family: 'Lucida Sans', sans-serif;
       }
-
+      
       .container {
         margin-top: 2rem; /* Adjusted margin-top */
         position: relative;
       }
 
-      .vocabulary-container {
+       .vocabulary-container {
         text-align: center;
-        margin-bottom: 1rem; /* Adjusted margin-bottom */
+        margin-top: 8rem;
+      }
+
+      .cse-reviewer {
+        font-size: 22px;
+        font-weight: bold;
+        color: #333; /* Default color for other text */
+        margin-bottom: 1rem;
+        text-align: center;
+        font-family: 'Roboto Slab', serif;
+      }
+
+      .cse-reviewer span {
+        color: #007BFF; /* Color for C and E */
+      }
+
+      .cse-reviewer .red-letter {
+        color:red; /* Color for S */
+       
+      }
+
+      .cse-reviewer .blue-word {
+        color: white; /* Color for REVIEWER */
+      
+      }
+      .vocabulary-container img {
+        width: 100%; /* Make the image fill the container */
+        max-width: 200px; /* Set a maximum width for the image */
       }
 
       .vocabulary-word-container {
@@ -89,8 +116,8 @@
         background-color: #FF5733;
         border: none;
         color: #fff;
-        padding: 10px 15px;
-        font-size: 20px;
+        padding: 5px 10px;
+        font-size: 18px;
         border-radius: 5px;
         cursor: pointer;
         transition: background-color 0.3s ease;
@@ -104,55 +131,95 @@
   <body>
     <div class="container">
       <div class="vocabulary-container">
-         <img src="assets/imgs/quizmo-edited.png" alt="Quiz Logo" class="mb-4">
+        <img src="assets/imgs/quizmo.png" alt="Quiz Logo" class="mb-4">
+        <div class="cse-reviewer">
+          <span>C</span><span class="red-letter">S</span><span>E</span>
+          <span class="blue-word">REVIEWER</span>
+        </div>
       </div>
       <div class="col-md-10 col-lg-10">
         <div class="card-container">
           <div class="question p-3 border-bottom">
             <div class="d-flex flex-row justify-content-between align-items-center mcq">
-              <h3>Numerical Ability</h3>
-              <span style="font-size: 20px;">(4 of 5)</span>
+              <h3 style="font-size: 18px;">Numerical Ability</h3>
+              <span style="font-size: 18px;">(8 of 20)</span>
             </div>
           </div>
           <div class="question p-3 border-bottom">
             <div class="d-flex flex-row question-title">
-              <h5 class="mt-1 ml-2" style="font-size: 25px;">4. 228 is 25% of what number?</h5>
+              <h5 class="mt-1 ml-2" style="font-size: 18px;"> 7. The length of a rectangle is 8 meters more than twice its width. The perimeter is  112 meters. Find its area.</h5>
             </div>
             <div class="ans">
               <label class="radio">
                 <input type="radio" name="population" value="brazil">
-                <span style="font-size: 25px;">52</span>
+                <span style="font-size: 18px;">16m </span>
               </label>
             </div>
             <div class="ans">
               <label class="radio">
                 <input type="radio" name="population" value="Germany">
-                <span style="font-size: 25px;">57</span>
+                <span style="font-size: 18px;"> 24m </span>
               </label>
             </div>
             <div class="ans">
               <label class="radio">
                 <input type="radio" name="population" value="Indonesia">
-                <span style="font-size: 25px;">54</span>
+                <span style="font-size: 18px;">28 m2</span>
               </label>
             </div>
             <div class="ans">
               <label class="radio">
                 <input type="radio" name="population" value="Russia">
-                <span style="font-size: 25px;">912</span>
+                <span style="font-size: 18px;"> 640 m2</span>
               </label>
             </div>
           </div>
+          
+          <!-- New Question -->
+          <div class="question p-3 border-bottom">
+            <div class="d-flex flex-row question-title">
+              <h5 class="mt-1 ml-2" style="font-size: 18px;">8. If 560 out of 700 examinees passed in the recent Career Service exam for Sub Professional level, what percent of the examinees passed? </h5>
+            </div>
+            <div class="ans">
+              <label class="radio">
+                <input type="radio" name="population" value="brazil">
+                <span style="font-size: 18px;"> 65%</span>
+              </label>
+            </div>
+            <div class="ans">
+              <label class="radio">
+                <input type="radio" name="population" value="Germany">
+                <span style="font-size: 18px;">72% </span>
+              </label>
+            </div>
+            <div class="ans">
+              <label class="radio">
+                <input type="radio" name="population" value="Indonesia">
+                <span style="font-size: 18px;">80% </span>
+              </label>
+            </div>
+            <div class="ans">
+              <label class="radio">
+                <input type="radio" name="population" value="Russia">
+                <span style="font-size: 18px;">140% </span>
+              </label>
+            </div>
+          </div>
+          <!-- Continue with other questions as needed -->
+         
           <div class="d-flex flex-row justify-content-between align-items-center p-3">
             <a href="numericalability3.html">
-              <button class="btn btn-primary rounded-pill" style="font-size: 20px;">
+              <button class="btn btn-primary rounded-pill" style="font-size: 20px; width: 120px;">
                 Previous <i class="fa fa-angle-right ml-2"></i>
               </button>
             </a>
+            
             <a href="numericalability5.html">
-            <button class="btn btn-primary rounded-pill" style="font-size: 20px;">
+              <button class="btn btn-primary rounded-pill" style="font-size: 20px; width: 120px;">
                 Next <i class="fa fa-angle-right ml-2"></i>
-              </button> </a>
+              </button>
+            </a>
+            
           </div>
         </div>
       </div>

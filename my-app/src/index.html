@@ -1,97 +1,100 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Awesome Capacitor App</title>
-    <meta
-      name="viewport"
-      content="viewport-fit=cover, width=device-width, initial-scale=1.0"
-    />
-    <meta name="format-detection" content="telephone=no" />
-    <meta name="msapplication-tap-highlight" content="no" />
 
-    <script
-      type="module"
-      src="https://unpkg.com/@ionic/pwa-elements@latest/dist/ionicpwaelements/ionicpwaelements.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/@ionic/pwa-elements@latest/dist/ionicpwaelements/ionicpwaelements.js"
-    ></script>
+<head>
+  <meta charset="UTF-8" />
+  <title>Awesome Capacitor App</title>
+  <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="msapplication-tap-highlight" content="no" />
 
-    <link rel="apple-touch-icon" href="./assets/icon/apple-touch-icon.png"/>
-    <link rel="icon" type="image/x-icon" href="./assets/icon/favicon.ico" />
-    <link rel="manifest" href="./manifest.json" />
-    <link rel="stylesheet" href="./css/style.css" />
+  <script type="module" src="https://unpkg.com/@ionic/pwa-elements@latest/dist/ionicpwaelements/ionicpwaelements.esm.js"></script>
+  <script nomodule src="https://unpkg.com/@ionic/pwa-elements@latest/dist/ionicpwaelements/ionicpwaelements.js"></script>
 
-    <style>
-      body, html {
-        height: 100%;
-        margin: 0;
-        overflow: hidden;
-      }
+  <link rel="apple-touch-icon" href="./assets/icon/apple-touch-icon.png" />
+  <link rel="icon" type="image/x-icon" href="./assets/icon/favicon.ico" />
+  <link rel="manifest" href="./manifest.json" />
+  <link rel="stylesheet" href="./css/style.css" />
 
-      .login-container {
-        background: transparent;
-        margin-top: 20px;
-      }
+  <style>
+    body,
+    html {
+      height: 100%;
+      margin: 0;
+      overflow: auto; /* Changed from 'hidden' to 'auto' */
+    }
 
-      .edition-text {
-        font-family: 'Roboto Slab', serif;
-        font-size: 24px;
-        margin-top: 8px;
-        color: white;
-      }
+    .container {
+      /* You may need to adjust this height or add max-height if needed */
+      max-height: 100%;
+      overflow-y: auto; /* Enable vertical scrolling within the container */
+      padding: 20px; /* Add padding as needed */
+      margin-bottom: 2rem;
+    }
 
-      .c-text {
-        color: #007BFF;
-      }
+    .login-container {
+      background: transparent;
+      margin-top: 20px;
+      margin-bottom: 2rem;
+    }
 
-      .s-text {
-        color: red;
-      }
+    .edition-text {
+      font-family: 'Roboto Slab', serif;
+      font-size: 24px;
+      margin-top: 8px;
+      color: white;
+    }
 
-      .form-label {
-        color: white;
-      }
-    </style>
+    .c-text {
+      color: #007BFF;
+    }
 
-    <script type="module" src="./js/main.js"></script>
-  </head>
-  <body>
-    <script src="./js/capacitor-welcome.js" type="module"></script>
+    .s-text {
+      color: red;
+    }
 
-    <div class="container d-flex align-items-center justify-content-center h-100" >
-      <div class="text-center">
-        <img src="assets/imgs/quizmo.png" alt="Quiz Logo" class="mb-4">
+    .form-label {
+      color: white;
+    }
+  </style>
 
-        <p class="edition-text">
-          <span class="c-text">C</span><span class="s-text">S</span><span class="c-text">C</span>
-          <span class="edition">Edition</span>
-        </p>
+  <script type="module" src="./js/main.js"></script>
+</head>
 
-        <div class="login-container">
-          <form action="/login" method="POST" class="mt-3 mx-auto">
-            <div class="form-group">
-              <label for="username" class="form-label">Username</label>
-              <input type="text" class="form-control" id="username" name="username" placeholder="Enter username" required>
+<body>
+  <script src="./js/capacitor-welcome.js" type="module"></script>
+
+  <div class="container d-flex align-items-center justify-content-center h-100">
+    <div class="text-center">
+      <img src="assets/imgs/quizmo.png" alt="Quiz Logo" class="mb-4">
+
+      <p class="edition-text">
+        <span class="c-text">C</span><span class="s-text">S</span><span class="c-text">C</span>
+        <span class="edition">Edition</span>
+      </p>
+
+      <div class="login-container">
+        <form action="/login" method="POST" class="mt-3 mx-auto">
+          <div class="form-group">
+            <label for="username" class="form-label">Username</label>
+            <input type="text" class="form-control" id="username" name="username" placeholder="Enter username" required>
+          </div>
+          <br>
+          <div class="form-group">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" class="form-control" id="password" name="password" placeholder="Enter password" required>
+          </div><br>
+          <div class="form-group">
+            <div class="d-grid gap-2 col mx-auto">
+              <a href="startpage.html" class="btn btn-info btn-lg mb-2">Log in</a>
+
+              <a href="signup.html" class="btn btn-info btn-lg">Create Account</a>
             </div>
-            <br>
-            <div class="form-group">
-              <label for="password" class="form-label">Password</label>
-              <input type="password" class="form-control" id="password" name="password" placeholder="Enter password" required>
-            </div><br>
-            <div class="form-group">
-              <div class="d-grid gap-2 col mx-auto">
-                <a href="startpage.html" class="btn btn-info btn-lg mb-2">Log in</a>
-        
-                <a href="signup.html" class="btn btn-info btn-lg">Create Account</a>
-              </div>
-            </div>
-          </form>
-        </div>
+          </div>
+        </form>
       </div>
     </div>
-    
-  </body>
+  </div>
+</body>
+
 </html>

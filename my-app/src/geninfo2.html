@@ -32,15 +32,42 @@
         margin: 0;
         font-family: 'Lucida Sans', sans-serif;
       }
-
+      
       .container {
         margin-top: 2rem; /* Adjusted margin-top */
         position: relative;
       }
 
-      .vocabulary-container {
+       .vocabulary-container {
         text-align: center;
-        margin-bottom: 1rem; /* Adjusted margin-bottom */
+        margin-top: 6rem;
+      }
+
+      .cse-reviewer {
+        font-size: 22px;
+        font-weight: bold;
+        color: #333; /* Default color for other text */
+        margin-bottom: 1rem;
+        text-align: center;
+        font-family: 'Roboto Slab', serif;
+      }
+
+      .cse-reviewer span {
+        color: #007BFF; /* Color for C and E */
+      }
+
+      .cse-reviewer .red-letter {
+        color:red; /* Color for S */
+       
+      }
+
+      .cse-reviewer .blue-word {
+        color: white; /* Color for REVIEWER */
+      
+      }
+      .vocabulary-container img {
+        width: 100%; /* Make the image fill the container */
+        max-width: 200px; /* Set a maximum width for the image */
       }
 
       .vocabulary-word-container {
@@ -89,8 +116,8 @@
         background-color: #FF5733;
         border: none;
         color: #fff;
-        padding: 10px 15px;
-        font-size: 20px;
+        padding: 5px 10px;
+        font-size: 18px;
         border-radius: 5px;
         cursor: pointer;
         transition: background-color 0.3s ease;
@@ -104,56 +131,95 @@
   <body>
     <div class="container">
       <div class="vocabulary-container">
-        <img src="assets/imgs/quizmo-edited.png" alt="Quiz Logo" class="mb-4">
+        <img src="assets/imgs/quizmo.png" alt="Quiz Logo" class="mb-4">
+        <div class="cse-reviewer">
+          <span>C</span><span class="red-letter">S</span><span>E</span>
+          <span class="blue-word">REVIEWER</span>
+        </div>
       </div>
       <div class="col-md-10 col-lg-10">
         <div class="card-container">
           <div class="question p-3 border-bottom">
             <div class="d-flex flex-row justify-content-between align-items-center mcq">
-              <h3>General Information</h3>
-              <span style="font-size: 25px;">(2 of 5)</span>
+              <h3 style="font-size: 18px;">General Information</h3>
+              <span style="font-size: 18px;">(4 of 20)</span>
             </div>
           </div>
           <div class="question p-3 border-bottom">
             <div class="d-flex flex-row question-title">
-              <h5 class="mt-1 ml-2" style="font-size: 25px;">2. For how many years did Spanish rule last in the Philippines?</h5>
+              <h5 class="mt-1 ml-2" style="font-size: 18px;">3. How many Associate Justices shall comprise the Supreme Court?</h5>
             </div>
             <div class="ans">
               <label class="radio">
                 <input type="radio" name="population" value="brazil">
-                <span style="font-size: 25px;"> 333</span>
+                <span style="font-size: 18px;">11</span>
               </label>
             </div>
             <div class="ans">
               <label class="radio">
                 <input type="radio" name="population" value="Germany">
-                <span style="font-size: 25px;">302</span>
+                <span style="font-size: 18px;">12</span>
               </label>
             </div>
             <div class="ans">
               <label class="radio">
                 <input type="radio" name="population" value="Indonesia">
-                <span style="font-size: 25px;">311</span>
+                <span style="font-size: 18px;">13</span>
               </label>
             </div>
             <div class="ans">
               <label class="radio">
                 <input type="radio" name="population" value="Russia">
-                <span style="font-size: 25px;">334</span>
+                <span style="font-size: 18px;">14</span>
               </label>
             </div>
           </div>
+          
+          <!-- New Question -->
+          <div class="question p-3 border-bottom">
+            <div class="d-flex flex-row question-title">
+              <h5 class="mt-1 ml-2" style="font-size: 18px;">4. Which of the following is NOT a constitutional commission which is stated in the 1987 Philippine Constitution?</h5>
+            </div>
+            <div class="ans">
+              <label class="radio">
+                <input type="radio" name="population" value="brazil">
+                <span style="font-size: 18px;">Commission on Audit</span>
+              </label>
+            </div>
+            <div class="ans">
+              <label class="radio">
+                <input type="radio" name="population" value="Germany">
+                <span style="font-size: 18px;">Commission on Election</span>
+              </label>
+            </div>
+            <div class="ans">
+              <label class="radio">
+                <input type="radio" name="population" value="Indonesia">
+                <span style="font-size: 18px;">Commission on Population</span>
+              </label>
+            </div>
+            <div class="ans">
+              <label class="radio">
+                <input type="radio" name="population" value="Russia">
+                <span style="font-size: 18px;">Civil Service Commission</span>
+              </label>
+            </div>
+          </div>
+          <!-- Continue with other questions as needed -->
+         
           <div class="d-flex flex-row justify-content-between align-items-center p-3">
             <a href="geninfo.html">
-              <button class="btn btn-primary rounded-pill" style="font-size: 20px;">
+              <button class="btn btn-primary rounded-pill" style="font-size: 20px; width: 120px;">
                 Previous <i class="fa fa-angle-right ml-2"></i>
               </button>
             </a>
+            
             <a href="geninfo3.html">
-                <button class="btn btn-primary rounded-pill" style="font-size: 20px;">
-                  Next <i class="fa fa-angle-right ml-2"></i>
-                </button>
-              </a>
+              <button class="btn btn-primary rounded-pill" style="font-size: 20px; width: 120px;">
+                Next <i class="fa fa-angle-right ml-2"></i>
+              </button>
+            </a>
+            
           </div>
         </div>
       </div>

@@ -32,15 +32,42 @@
         margin: 0;
         font-family: 'Lucida Sans', sans-serif;
       }
-
+      
       .container {
         margin-top: 2rem; /* Adjusted margin-top */
         position: relative;
       }
 
-      .vocabulary-container {
+       .vocabulary-container {
         text-align: center;
-        margin-bottom: 1rem; /* Adjusted margin-bottom */
+        margin-top: 8rem;
+      }
+
+      .cse-reviewer {
+        font-size: 22px;
+        font-weight: bold;
+        color: #333; /* Default color for other text */
+        margin-bottom: 1rem;
+        text-align: center;
+        font-family: 'Roboto Slab', serif;
+      }
+
+      .cse-reviewer span {
+        color: #007BFF; /* Color for C and E */
+      }
+
+      .cse-reviewer .red-letter {
+        color:red; /* Color for S */
+       
+      }
+
+      .cse-reviewer .blue-word {
+        color: white; /* Color for REVIEWER */
+      
+      }
+      .vocabulary-container img {
+        width: 100%; /* Make the image fill the container */
+        max-width: 200px; /* Set a maximum width for the image */
       }
 
       .vocabulary-word-container {
@@ -89,8 +116,8 @@
         background-color: #FF5733;
         border: none;
         color: #fff;
-        padding: 10px 15px;
-        font-size: 20px;
+        padding: 5px 10px;
+        font-size: 18px;
         border-radius: 5px;
         cursor: pointer;
         transition: background-color 0.3s ease;
@@ -104,56 +131,95 @@
   <body>
     <div class="container">
       <div class="vocabulary-container">
-        <img src="assets/imgs/quizmo-edited.png" alt="Quiz Logo" class="mb-4">
+        <img src="assets/imgs/quizmo.png" alt="Quiz Logo" class="mb-4">
+        <div class="cse-reviewer">
+          <span>C</span><span class="red-letter">S</span><span>E</span>
+          <span class="blue-word">REVIEWER</span>
+        </div>
       </div>
       <div class="col-md-10 col-lg-10">
         <div class="card-container">
           <div class="question p-3 border-bottom">
             <div class="d-flex flex-row justify-content-between align-items-center mcq">
-              <h3>Verbal Ability</h3>
-              <span style="font-size: 25px;">(3 of 5)</span>
+              <h3 style="font-size: 18px;">Verbal Ability</h3>
+              <span style="font-size: 18px;">(6 of 20)</span>
             </div>
           </div>
           <div class="question p-3 border-bottom">
             <div class="d-flex flex-row question-title">
-              <h5 class="mt-1 ml-2" style="font-size: 25px;">2. We used ____ sauce for the spaghetti last Sunday.</h5>
+              <h5 class="mt-1 ml-2" style="font-size: 18px;">5. The ____ weather patterns of the tropical island meant tourists had to carry both umbrellas and sunglasses.   </h5>
             </div>
             <div class="ans">
               <label class="radio">
                 <input type="radio" name="population" value="brazil">
-                <span style="font-size: 25px;">less</span>
+                <span style="font-size: 18px;">kaleidoscopic</span>
               </label>
             </div>
             <div class="ans">
               <label class="radio">
                 <input type="radio" name="population" value="Germany">
-                <span style="font-size: 25px;">few</span>
+                <span style="font-size: 18px;">impertinent </span>
               </label>
             </div>
             <div class="ans">
               <label class="radio">
                 <input type="radio" name="population" value="Indonesia">
-                <span style="font-size: 25px;">a number of</span>
+                <span style="font-size: 18px;">supplicant </span>
               </label>
             </div>
             <div class="ans">
               <label class="radio">
                 <input type="radio" name="population" value="Russia">
-                <span style="font-size: 25px;">pieces of</span>
+                <span style="font-size: 18px;">illustrative </span>
               </label>
             </div>
           </div>
+          
+          <!-- New Question -->
+          <div class="question p-3 border-bottom">
+            <div class="d-flex flex-row question-title">
+              <h5 class="mt-1 ml-2" style="font-size: 18px;">6. To find out what her husband bought for her birthday, Susan attempted to ____ his family members about his recent shopping excursions.</h5>
+            </div>
+            <div class="ans">
+              <label class="radio">
+                <input type="radio" name="population" value="brazil">
+                <span style="font-size: 18px;">prescribe</span>
+              </label>
+            </div>
+            <div class="ans">
+              <label class="radio">
+                <input type="radio" name="population" value="Germany">
+                <span style="font-size: 18px;">probe </span>
+              </label>
+            </div>
+            <div class="ans">
+              <label class="radio">
+                <input type="radio" name="population" value="Indonesia">
+                <span style="font-size: 18px;">alienate </span>
+              </label>
+            </div>
+            <div class="ans">
+              <label class="radio">
+                <input type="radio" name="population" value="Russia">
+                <span style="font-size: 18px;">converge </span>
+              </label>
+            </div>
+          </div>
+          <!-- Continue with other questions as needed -->
+         
           <div class="d-flex flex-row justify-content-between align-items-center p-3">
             <a href="verbalability2.html">
-              <button class="btn btn-primary rounded-pill" style="font-size: 20px;">
+              <button class="btn btn-primary rounded-pill" style="font-size: 20px; width: 120px;">
                 Previous <i class="fa fa-angle-right ml-2"></i>
               </button>
             </a>
+            
             <a href="verbalability4.html">
-                <button class="btn btn-primary rounded-pill" style="font-size: 20px;">
-                  Next <i class="fa fa-angle-right ml-2"></i>
-                </button>
-              </a>
+              <button class="btn btn-primary rounded-pill" style="font-size: 20px; width: 120px;">
+                Next <i class="fa fa-angle-right ml-2"></i>
+              </button>
+            </a>
+            
           </div>
         </div>
       </div>

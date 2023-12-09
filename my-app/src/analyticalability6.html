@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Awesome Capacitor App</title>
+  <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="msapplication-tap-highlight" content="no" />
+
+  <script type="module" src="https://unpkg.com/@ionic/pwa-elements@latest/dist/ionicpwaelements/ionicpwaelements.esm.js"></script>
+  <script nomodule src="https://unpkg.com/@ionic/pwa-elements@latest/dist/ionicpwaelements/ionicpwaelements.js"></script>
+  <link rel="apple-touch-icon" href="./assets/icon/apple-touch-icon.png" />
+  <link rel="icon" type="image/x-icon" href="./assets/icon/favicon.ico" />
+  <link rel="manifest" href="./manifest.json" />
+  <link rel="stylesheet" href="./css/style.css" />
+
+  <script type="module" src="./js/main.js"></script>
+
+  <meta name="theme-color" content="#31d53d" />
+  <style>
+    /* Add your custom styles here */
+    body {
+      margin: 0;
+      font-family: 'Lucida Sans', sans-serif;
+    }
+    
+    .container {
+      margin-top: 2rem;
+      position: relative;
+    }
+
+    .vocabulary-container {
+      text-align: center;
+      margin-top: 1rem;
+    }
+
+    .cse-reviewer {
+      font-size: 22px;
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 1rem;
+      text-align: center;
+      font-family: 'Roboto Slab', serif;
+    }
+
+    .cse-reviewer span {
+      color: #007BFF;
+    }
+
+    .cse-reviewer .red-letter {
+      color: red;
+    }
+
+    .cse-reviewer .blue-word {
+      color: #007BFF;
+    }
+
+    .cse-reviewer .white-word {
+      color: white;
+    }
+
+    /* Other existing styles... */
+
+    /* New Question Styles */
+    .question-container {
+    background-color: rgba(255, 255, 255, 0);
+      box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2); /* Slightly visible transparent background */
+      padding: 15px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    .question {
+      color: white; /* Adjusted color for question text */
+      font-size: 18px;
+      margin-bottom: 15px;
+    }
+
+    .ans {
+      margin-bottom: 10px; /* Adjusted margin */
+    }
+
+    .ans span {
+      color: white; /* Adjusted color for answer text */
+      font-size: 18px;
+    }
+
+    /* Adjusted Next Button Style */
+    .next-button {
+      text-align: left;
+      margin-top: 20px;
+    }
+
+    .next-button button {
+      font-size: 18px;
+      border: none;
+      border-radius: 5px;
+      padding: 10px 20px;
+      background-color: #007BFF;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .next-button button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <!-- Vocabulary container -->
+    <div class="vocabulary-container">
+      <!-- Quiz Logo -->
+      <img src="assets/imgs/quizmo.png" alt="Quiz Logo" class="mb-4">
+      <!-- CSE Reviewer -->
+      <div class="cse-reviewer">
+        <span>C</span><span class="red-letter">S</span><span class="blue-word">E</span> <span class="white-word">REVIEWER</span>
+      </div>
+    </div>
+    <!-- Card container -->
+    <div class="col-md-10 col-lg-10">
+      <div class="card-container">
+        <!-- Question -->
+        <div class="question-container">
+          <div class="question p-3 border-bottom">
+            <div class="d-flex flex-row justify-content-between align-items-center mcq">
+              <!-- Change content to Analytical Ability -->
+              <h3 style="font-size: 18px; color: white;">Analytical Ability</h3>
+              <!-- Change to 12 of 20 -->
+              <span style="font-size: 18px; color: white;">(12 of 20)</span>
+            </div>
+          </div>
+
+          <!-- Question 11 -->
+          <div class="question p-3 border-bottom">
+            <div class="d-flex flex-row question-title">
+              <!-- Change question content -->
+              <h5 class="mt-1 ml-2">11. numbers : mathematics : : weather : _____</h5>
+            </div>
+            <!-- Answers -->
+            <div class="ans">
+              <label class="radio">
+                <input type="radio" name="question11" value="A">
+                <span>(A) geology</span>
+              </label>
+            </div>
+            <div class="ans">
+              <label class="radio">
+                <input type="radio" name="question11" value="B">
+                <span>(B) astrology</span>
+              </label>
+            </div>
+            <div class="ans">
+              <label class="radio">
+                <input type="radio" name="question11" value="C">
+                <span>(C) astronomy</span>
+              </label>
+            </div>
+            <div class="ans">
+              <label class="radio">
+                <input type="radio" name="question11" value="D">
+                <span>(D) meteorology</span>
+              </label>
+            </div>
+          </div>
+          
+          <!-- Question 12 -->
+          <div class="question p-3 border-bottom">
+            <div class="d-flex flex-row question-title">
+              <!-- Change question content -->
+              <h5 class="mt-1 ml-2">12. little : least : : well : ______</h5>
+            </div>
+            <!-- Answers -->
+            <div class="ans">
+              <label class="radio">
+                <input type="radio" name="question12" value="A">
+                <span>(A) great</span>
+              </label>
+            </div>
+            <div class="ans">
+              <label class="radio">
+                <input type="radio" name="question12" value="B">
+                <span>(B) proud</span>
+              </label>
+            </div>
+            <div class="ans">
+              <label class="radio">
+                <input type="radio" name="question12" value="C">
+                <span>(C) best</span>
+              </label>
+            </div>
+            <div class="ans">
+              <label class="radio">
+                <input type="radio" name="question12" value="D">
+                <span>(D) adore</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Next Button -->
+          <div class="next-button">
+            <a href="analyticalability7.html">
+              <button>
+                Next <i class="fa fa-angle-right ml-2"></i>
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
