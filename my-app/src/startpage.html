@@ -49,39 +49,45 @@
       color: white;
     }
 
-    .categories {
-      text-align: center;
-      font-size: 18px;
-      color:white;
-    }
+   /* Your existing CSS */
+.categories {
+  text-align: center;
+  font-size: 18px;
+  color: white;
+}
 
-    .categories ul {
-      list-style-type: none;
-      padding-left: 0;
-    }
+.categories ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-top: 20px; /* Added margin for better spacing */
+}
 
-    .categories li {
-      margin-bottom: 10px;
-    }
+.categories li {
+  margin-bottom: 10px;
+  background-color: rgba(255, 255, 255, 0.1); /* Background color for list items */
+  padding: 10px; /* Padding for list items */
+  border-radius: 5px; /* Rounded corners */
+  list-style: none;
+  font-family: 'Roboto Slab', serif;
+}
 
-    .proceed-button {
-      text-align: center;
-      padding: 20px;
-    }
 
-    .proceed-button a {
-      background-color: #31d53d;
-      color: white;
-      padding: 10px 20px;
-      text-decoration: none;
-      border-radius: 5px;
-    }
+.btn-primary {
+        background-color: #FF5733;
+        border: none;
+        color: #fff;
+        padding: 5px 10px;
+        font-size: 18px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
 
-    .proceed-button a:hover {
-      background-color: #238c32;
-    }
-    
+      .btn-primary:hover {
+        background-color: #e64d00;
+      }
 
+   
     .edition-text {
       font-family: 'Roboto Slab', serif;
       font-size: 24px;
@@ -122,9 +128,14 @@
   </div>
 
   <!-- Proceed button -->
-  <div class="proceed-button">
-    <a href="numericalability.html">Proceed</a>
+  <div class="d-flex flex-row justify-content-center align-items-center p-3">
+    <a href="numericalability.html">
+      <button class="btn btn-primary rounded-pill" style="font-size: 20px; width: 120px;">
+        Proceed <i class="fa fa-angle-right ml-2"></i>
+      </button>
+    </a>
   </div>
+  
   
 </body>
 

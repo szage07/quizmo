@@ -31,7 +31,7 @@ export default defineConfig({
         analyticalability6 : resolve (__dirname, 'src/analyticalability6.html'),
         analyticalability7 : resolve (__dirname, 'src/analyticalability7.html'),
         analyticalability8 : resolve (__dirname, 'src/analyticalability8.html'),
-        analyticalability9 : resolve (__dirname, 'src/analyticalability8.html'),
+        analyticalability9 : resolve (__dirname, 'src/analyticalability9.html'),
         analyticalability10 : resolve (__dirname, 'src/analyticalability10.html'),
         verbalability : resolve (__dirname, 'src/verbalability.html'),
         verbalability2 : resolve (__dirname, 'src/verbalability2.html'),
