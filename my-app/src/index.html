@@ -26,8 +26,9 @@
 
     .container {
       /* You may need to adjust this height or add max-height if needed */
-      height: 5px;
+      max-height: 100%;
       padding: 20px; /* Add padding as needed */
+      margin-top: 1rem;
     }
 
     .login-container {
@@ -54,6 +55,11 @@
     .form-label {
       color: white;
     }
+
+    /* Adjust the image size */
+    img {
+      max-width: 20px; /* Set your preferred max width */
+    }
   </style>
 
   <script type="module" src="./js/main.js"></script>
@@ -74,8 +80,8 @@
       <div class="login-container">
         <form action="/login" method="POST" class="mt-3 mx-auto">
           <div class="form-group">
-            <label for="username" class="form-label">Username</label>
-            <input type="text" class="form-control" id="username" name="username" placeholder="Enter username" required>
+            <label for="username" class="form-label">E-mail</label>
+            <input type="text" class="form-control" id="username" name="username" placeholder="Enter e-mail" required>
           </div>
           <br>
           <div class="form-group">
@@ -85,7 +91,6 @@
           <div class="form-group">
             <div class="d-grid gap-2 col mx-auto">
               <a href="startpage.html" class="btn btn-info btn-lg mb-2">Log in</a>
-
               <a href="signup.html" class="btn btn-info btn-lg">Create Account</a>
             </div>
           </div>
