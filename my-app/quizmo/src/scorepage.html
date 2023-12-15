@@ -25,7 +25,7 @@
 
     <script type="module" src="./js/main.js"></script>
 
-    <meta name="theme-color" content="#31d53d" />
+    <meta  content="#31d53d" />
   </head>
   <style>
     body {
@@ -52,15 +52,44 @@
     .start-button:hover {
       background-color: #2cbb37; /* Add a different color on hover */
     }
+
+    /* Add this rule to make the table background transparent */
+    .table {
+      background-color: transparent;
+    }
   </style>
   <body class="container" >
 
     <div class="container-fluid vh-100 d-flex justify-content-center align-items-center">
       <div class="text-center text-white">
-          <h1>Your Score:</h1>
-          <h2 class="display-1 " style="color:wheat;"><b>2/5</b></h2><br>
           <p class="font-size: 20px text-dark text-white">Congratulations! You've completed the quiz.</p>
-          <br>
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th scope="col">Category</th>
+                <th scope="col">Score</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Numerical</td>
+                <td>20</td>
+              </tr>
+              <tr>
+                <td>Analytical</td>
+                <td>20</td>
+              </tr>
+              <tr>
+                <td>Verbal</td>
+                <td>20</td>
+              </tr>
+              <tr>
+                <td>General Information</td>
+                <td>20</td>
+              </tr>
+            </tbody>
+          </table>
+          <h2 class="display-1 " style="color:wheat;"><b>Total Score: 80</b></h2><br>
           <div class="mt-3">
               <a href="startpage.html" class="btn btn-success me-2" style="background-color: darkblue">Retry Quiz</a>
               <a href="startpage.html" class="btn btn-success me-2" style="background-color: darkblue;">Home</a>
