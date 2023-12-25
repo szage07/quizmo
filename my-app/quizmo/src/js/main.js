@@ -6,8 +6,12 @@ import * as bootstrap from 'bootstrap'
 //import supabase
 import { createClient } from '@supabase/supabase-js'
 
+import { setRouter } from './router/router.js'
+
 // Create a single supabase client for interacting with your database
 const supabase = createClient('https://xeajiibztieslaxpthsi.supabase.co', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InhlYWppaWJ6dGllc2xheHB0aHNpIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDA1NzIyOTMsImV4cCI6MjAxNjE0ODI5M30.LRNjtF1rSZZjXOvi5SKMWIZidvUSHpfZj_JZqrxK71c')
+
+setRouter();
 
 function successNotification (message, seconds = 5){
     document.querySelector(".alert-success").classList.remove("d-none");

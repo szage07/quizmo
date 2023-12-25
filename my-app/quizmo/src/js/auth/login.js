@@ -16,7 +16,19 @@ let { data, error } = await supabase.auth.signInWithPassword({
 
   console.log(data);
 
-  if (error == null) successNotification("Login Successfully!");
+  let session = data.session;
+  let user = data.user;
+
+  console.log(session);
+  if(session != null){
+     localStorage.setItem("session_token",session.access_token)
+     localStorage.setItem("refresh_token",session.refresh_token)
+  }
+  if (error == null){
+    successNotification("Login Successfully!");
+    window.location.pathname='/startpage.html';
+  } 
+  
   else {
       errorNotification("Something went wrong. Unable to login.",5);
       console.log(error);
