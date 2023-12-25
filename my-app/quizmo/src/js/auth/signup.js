@@ -13,8 +13,7 @@ signup_form.onsubmit = async (e) => {
 
     const formData = new FormData(signup_form);
  if (formData.get("password") == formData.get("confirm_password")){
-    alert("Passwords does match");
-
+   
     const { data, error } = await supabase.auth.signUp({
         email: formData.get("email"),
         password: formData.get("password"),
