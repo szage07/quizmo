@@ -36,7 +36,7 @@ signup_form.onsubmit = async (e) => {
    .select();
         
      
-    if (error == null) successNotification("Registered Successfully", 5);
+    if (error == null) successNotification("Registered Successfully! <a href='./index.html'> Click here to LogIn!</a>", 5);
     else {
         errorNotification("Something went wrong. Unable to register.", 5);
         console.log(error);
