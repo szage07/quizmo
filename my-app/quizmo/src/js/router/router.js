@@ -22,6 +22,7 @@ function setRouter(){
          case "/numericalability7.html": 
          case "/numericalability8.html": 
          case "/numericalability9.html":
+         case "/numericalability10.html":
          case "/analyticalability.html": 
          case "/analyticalability2.html": 
          case "/analyticalability3.html": 

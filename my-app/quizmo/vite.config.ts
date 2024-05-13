@@ -23,6 +23,7 @@ export default defineConfig({
         numericalability7 : resolve (__dirname, 'src/numericalability7.html'),
         numericalability8 : resolve (__dirname, 'src/numericalability8.html'),
         numericalability9 : resolve (__dirname, 'src/numericalability9.html'),
+        numericalability10 : resolve (__dirname, 'src/numericalability10.html'),
         analyticalability : resolve (__dirname, 'src/analyticalability.html'),
         analyticalability2 : resolve (__dirname, 'src/analyticalability2.html'),
         analyticalability3 : resolve (__dirname, 'src/analyticalability3.html'),
